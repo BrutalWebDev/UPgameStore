@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>Поддержка UPGAME.STORE</title>
         <meta name="description" content="Центр поддержки UPGAME. Форма обратной связи для любых вопросов.">
         <meta name="keywords" content="upgame, поддержка">
@@ -26,15 +26,7 @@
     </div>
 
     <div class="container">
-        <p align="center">
-          <a class="btn btn-outline-info btn-lg" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="fas fa-gamepad fa-1x" style="margin-right: 5px;"></i> Товары</a>
-          <button class="btn btn-outline-info btn-lg" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"><i class="fas fa-wallet fa-1x" style="margin-right: 5px;"></i> Платежи</button>
-          <button class="btn btn-outline-info btn-lg" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3"><i class="fas fa-comments fa-1x" style="margin-right: 5px;"></i> Написать в службу поддержки</button>
-        </p>
-        <div class="row" style="padding-bottom:10%;">
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body" style="border: 0px; padding: 0px;">
+
                 <div class="accordion" id="accordionExample">
                   <div class="card">
                     <div class="card-header" id="headingOne">
@@ -134,12 +126,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample2">
-              <div class="card card-body" style="border: 0px; padding: 0px;">
                 <div class="accordion" id="accordionExample2">
                   <div class="card">
                     <div class="card-header" id="headingOne1">
@@ -231,18 +217,24 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+</div>
+                
+        
           <script type="text/javascript">
               function ne () {
               document.getElementById('jb1').hidden = true;
               document.getElementById('jb2').hidden = false;
               }
           </script>
-           <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample3">
-              <div class="card card-body" id="jb1">
+           
+
+<div class="container" style="background: -webkit-radial-gradient(circle,#0f4260,#001c42); margin-left: 0px; margin-right: 0px; min-width: 100%; margin-top:20px; height: 600px;">
+  <div class="content" style="padding-top: 60px;">
+    <p style="color:#fff;">Обращение в службу поддержки UPGAME.STORE</p>
+    <h1 style=" color:#fff;">Остались вопросы?</h1>
+  </div>
+  
+  <div class="card card-body"  id="jb1" style="max-width: 400px; margin-left: auto;margin-right: auto;">
           
                 <h3 align="center">Запрос в службу поддержки</h3><hr>
                 <label for="exampleInputEmail1">Введите ваш Email</label>
@@ -253,13 +245,10 @@
                         
               </div>
 
-              <div class="card card-body" id="jb2" hidden="true">
-                  <h3 align="center">Ваша заявка успешно отправлена, ответ поступит на вашу почту в течение суток.</h3>
+              <div class="card card-body" id="jb2" hidden="true" style="background-color: transparent; border-color: transparent;">
+                  <h3 align="center" style="color:#fff;">Ваша заявка успешно отправлена, ответ поступит на вашу почту в течение суток.</h3>
               </div>
-            </div>
-          </div>
-        </div>    
-    </div>
+</div>
 
     <?php
     include_once "include/footer.php"; 
@@ -269,6 +258,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/799dcbfda5.js" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+   
     </body>
 </html>

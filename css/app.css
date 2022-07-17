@@ -4,9 +4,34 @@ body {
   color: #000;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+.delivery {
+ 
+    background-color: #da4967;
+    color:#fff;
+    width:100%;
+    height:25px;
+    text-align: center;
+
+}
+
+.btn-al {
+  text-decoration: none;
+  color:#000;
+  font-weight: 600;
+  font-size: 14px;
   
+  margin-top: 15px;
+}
+
+.btn-al:hover {
+  text-decoration: none;
+  color: #ff793a;
 }
 
 .full-height {
@@ -136,6 +161,7 @@ body {
 
 .ftr {
   padding-top: 3%;
+  margin-bottom: 20px;
 }
 
 .card-deck {
@@ -193,24 +219,24 @@ body {
 
 .list-group-item {
 
-  
   transition: 0.5s;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+
 }
 
  .list-group-item:hover {
-
+  transition: 0.5s;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    transition: 0.5s;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  z-index: 3;
-
+  
+  
 }
 
+ a:hover .row .col-md-7 .fear{
+ color: #ff793a;
+}
+
+ a:hover .row .col-md-5 .fear{
+ color: #ff793a;
+}
 .swipe {
 
 }
@@ -233,7 +259,7 @@ body {
    
  border-color: transparent;
 }
- 
+
 .wrapper .card .face{
  width: 300px;
  height: 200px;
@@ -321,19 +347,184 @@ body {
   opacity: 0.5;
   color:#000;
   font-weight: 700;
-    transition: 0.5s;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+
 }
 
 .topblock:hover{
   text-decoration: none;
   color: #ff793a;
-  transition: 0.5s;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  z-index: 3;
+
 }
 
+section{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+
+input[type='checkbox']{ height: 0; width: 0; }
+
+input[type='checkbox'] + label{
+  position: relative;
+  display: flex;
+  margin: .6em 0;
+  align-items: center;
+  color: #000;
+  transition: color 250ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox'] + label > ins{
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 2em;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  transition: height 300ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox'] + label > ins > i{
+  position: absolute;
+  bottom: 0;
+  font-style: normal;
+  color: #000;
+}
+input[type='checkbox'] + label > span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+  width: 1em;
+  height: 1em;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 2px;
+  cursor: pointer;  
+  transition: all 250ms cubic-bezier(.4,.0,.23,1);
+}
+
+input[type='checkbox'] + label:hover, input[type='checkbox']:focus + label{
+  color: #000;
+}
+input[type='checkbox'] + label:hover > span, input[type='checkbox']:focus + label > span{
+  background: rgba(255,255,255,.1);
+}
+
+input[type='checkbox']:checked + label > span{
+  margin-top:-5px;
+  animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox']:checked + label > span:before{
+  content: "";
+  position: absolute;
+  top: .6em;
+  left: .2em;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: rotate(45deg);
+  transform-origin: 0% 100%;
+  animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
+}
+
+@keyframes shrink-bounce{
+  0%{
+    transform: scale(1);
+  }
+  33%{    
+    transform: scale(.85);
+  }
+  100%{
+    transform: scale(1);    
+  }
+}
+@keyframes checkbox-check{
+  0%{
+    width: 0;
+    height: 0;
+    border-color: #212121;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  33%{
+    width: .2em;
+    height: 0;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  100%{    
+    width: .2em;
+    height: .5em;    
+    border-color: #212121;
+    transform: translate3d(0,-.5em,0) rotate(45deg);
+  }
+}
+
+.garant {
+  font-weight: 600;
+}
+strong {
+    font-weight: bold;
+}
+
+.pay-menu {
+  color: #000;
+  transition: 0.5s;
+  min-height: 165px;
+  min-width: 191px;
+}
+
+.pay-menu:hover {
+  transition: 0.5s;
+  color: #ff793a;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.btn-rev {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+    background-color: transparent; 
+  
+}
+
+.btn-rev:hover{
+  text-decoration: none;
+  color:#fff;
+  background-color: #333;
+}
+
+.logo-tip {
+    text-align: center;
+    height: 200px;
+}
+
+.qiwi-text {
+    cursor: default;
+    color: #000;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 110%;
+    padding-top: 20px;
+    padding-left: 25px;
+    height: 55px;
+    width: 100%;
+}
+
+.qiwi-block {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    font-family: 'Exo 2', sans-serif;
+    position: relative;
+    background: #fff;
+    top: 300px;
+    margin: auto;
+    min-height: 310px;
+    width: 600px;
+}
+
+.qiwi-counter {
+    font-weight: 500;
+    font-size: 250%;
+}

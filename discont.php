@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>Накопительная скидка</title>
         <meta name="description" content="В нашем магазине UPGAME действует система накопительных скидок до 10%">
         <meta name="keywords" content="upgame, скидка">
@@ -23,7 +23,7 @@
     <div class="container" style="margin-top: 50px;">    
         <h1 align="left" style="font-weight: 700;">Накопительная скидка</h1>    
     </div>
-    <div class="container">
+    <div class="container" style="margin-bottom: 30px;">
        <div class="row"> 
         <div class="col-md-9" style="">
             <div class="jumbotron">
@@ -49,6 +49,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/799dcbfda5.js" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+   
     </body>
 </html>
